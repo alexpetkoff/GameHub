@@ -6,21 +6,23 @@ import BackgroundImageWelcome from "./components/BackgroundImageWelcome";
 import LoginSignUpContainer from "./components/LoginSignUpContainer";
 
 export default function App() {
-    // const [loaded, error] = useFonts({
-    //     "Roboto-Black": require("./assets/fonts/Roboto-Black.ttf"),
-    // });
+    const [loaded, error] = useFonts({
+        "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
+    });
 
     return (
-        <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-            <View style={styles.container}>
-                <StatusBar hidden style="light" />
-                <BackgroundImageWelcome>
-                    <View style={styles.centerContent}>
-                        <LoginSignUpContainer />
-                    </View>
-                </BackgroundImageWelcome>
-            </View>
-        </TouchableWithoutFeedback>
+        <>
+            <StatusBar hidden style="light" />
+            <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+                <View style={styles.container}>
+                    <BackgroundImageWelcome>
+                        <View style={styles.centerContent}>
+                            <LoginSignUpContainer screenState="login" />
+                        </View>
+                    </BackgroundImageWelcome>
+                </View>
+            </TouchableWithoutFeedback>
+        </>
     );
 }
 

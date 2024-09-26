@@ -27,7 +27,7 @@
             [
                 "expo-font",
                 {
-                    "fonts": ["../assets/fonts/Roboto-Black.ttf"]
+                    "fonts": ["../assets/fonts/Roboto-Regular.ttf"]
                 }
             ]
         ]

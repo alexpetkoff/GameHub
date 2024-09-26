@@ -29,5 +29,6 @@ const styles = StyleSheet.create({
         fontSize: 18,
         letterSpacing: 1.4,
         fontWeight: "700",
+        fontFamily: "Roboto-Regular",
     },
 });
